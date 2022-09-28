@@ -4,7 +4,7 @@ import hero from '../assets/images/hero-img.svg';
 
 const Home = () => {
   return (
-    <div>
+    <div className='home'>
       <header className='section header'>
         <Logo />
       </header>
