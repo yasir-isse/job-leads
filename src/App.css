@@ -1,3 +1,7 @@
+.home {
+  height: 100vh;
+  width: 100vw;
+}
 .header {
   height: 15vh;
   margin-bottom: 5rem;
@@ -52,11 +56,11 @@
   font-size: 2.5rem;
 }
 .hero-title > span {
-  color: var(--clr-white-2);
+  color: var(--clr-bg);
 }
 
 .hero-desc {
-  color: var(--clr-white-2);
+  color: var(--clr-bg);
   line-height: 1.5rem;
   margin-top: 1.8rem;
   margin-bottom: 1.8rem;
@@ -69,12 +73,85 @@
   text-transform: capitalize;
   font-weight: 400;
   font-size: 1rem;
-  background-color: var(--clr-white-2);
-  color: var(--clr-bg);
+  background-color: var(--clr-bg);
+  color: var(--clr-white-2);
   cursor: pointer;
   transition: var(--transition);
 }
 
 .hero-btn:hover {
   background-color: var(--clr-gold-2);
+  color: var(--clr-bg);
+}
+
+.form-section {
+  border-top: 5px solid var(--clr-bg);
+  border-radius: 5px;
+  box-shadow: var(--light-shadow);
+  max-height: 600px;
+  width: 65vw;
+  margin: 5.5rem auto;
+  background-color: white;
+  color: var(--clr-bg);
+}
+
+@media screen and (min-width: 650px) {
+  .form-section {
+    width: 400px;
+  }
+}
+
+.form-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.input-container {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.input-container > input {
+  height: 2.2rem;
+  background-color: var(--clr-white);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  outline: 1px solid lightgray;
+}
+
+.input-container > input:focus {
+  outline: 2px solid var(--clr-primary-4);
+}
+
+.input-btn {
+  width: 100%;
+  height: 2.2rem;
+  margin-top: 1rem;
+}
+
+.form-submit {
+  color: var(--clr-bg);
+}
+
+@media screen and (max-width: 650px) {
+  .input-container {
+    width: 15rem;
+  }
+  .logo-container {
+    width: 15rem;
+    padding: 10px;
+  }
+}
+
+.form-change:visited {
+  color: var(--clr-red-dark);
 }
