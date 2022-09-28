@@ -1,8 +1,8 @@
 import './logo.css';
 import { AiOutlineNodeIndex } from 'react-icons/ai';
-const Logo = () => {
+const Logo = ({ color }) => {
   return (
-    <div className='logo-container'>
+    <div className={`logo-container ${color === 'dark' ? 'dark' : ''} `}>
       <div className='logo-icon'>
         <AiOutlineNodeIndex />
       </div>

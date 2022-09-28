@@ -1,31 +1,47 @@
 .logo-container {
-  width: 90vw;
-  max-width: 1024px;
   height: 100%;
+  margin-left: 0;
   display: flex;
   align-items: center;
   gap: 5px;
-  border-radius: 5px;
-  color: var(--clr-white-2);
+  color: var(--clr-bg);
+  max-width: 11.8rem;
+}
+
+.dark {
+  color: var(--clr-bg);
 }
 
 .logo-icon {
-  font-size: 1.6rem;
   margin-bottom: 0.4rem;
   margin-top: 10px;
-  text-align: right;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 10px;
+  background-color: var(--clr-bg);
+  color: var(--clr-white-2);
 }
 
 .logo-text {
   flex: 3;
 }
-
+.logo-text > h3 {
+  font-size: 1.5rem;
+}
 @media screen and (min-width: 650px) {
-  .logo-container {
-    width: 400px;
-  }
-
   .logo-icon {
-    font-size: 2.2rem;
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .logo-icon {
+    font-size: 1.5rem;
+    height: 2rem;
+    width: 2rem;
+  }
+  .logo-text > h3 {
+    font-size: 1.2rem;
   }
 }
